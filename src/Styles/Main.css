@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 2rem;
+}
+
+main {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+table,
+th {
+  min-height: 30rem;
+  width: 40rem;
+  font-size: 4rem;
+  border: 0.2rem solid black;
+  table-layout: fixed;
+}
+.winner-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100%;
+  background-color: rgb(187, 217, 187);
+  margin-top: 3rem;
+}
+.winner-text {
+  /* margin-right: 4rem; */
+  background-color: red;
+}
+button {
+  padding: 1rem 3.5rem;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
