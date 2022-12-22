@@ -15,6 +15,11 @@ function Main() {
     else if (winner == 1) return `Player 1`;
     else return `Player 2`;
   }
+  function reset() {
+    setStatus(Array(9).fill(" "));
+    setWinner();
+    setPlayer(1);
+  }
   return (
     <main>
       <h1>Tic Tac Toe</h1>
@@ -107,7 +112,7 @@ function Main() {
         {winner && (
           <div className="winner-section">
             <h3 className="winner-text">Winner is player {winner}</h3>
-            <button>Reset</button>
+            <button onClick={reset}>Reset</button>
           </div>
         )}
       </div>

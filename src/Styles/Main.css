@@ -23,20 +23,18 @@ table,
 th {
   min-height: 30rem;
   width: 40rem;
-  font-size: 4rem;
-  border: 0.2rem solid black;
-  table-layout: fixed;
+  /* font-size: 4rem; */
+  margin: 4rem;
 }
-.winner-section {
+/* .winner-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-width: 100%;
   background-color: rgb(187, 217, 187);
   margin-top: 3rem;
-}
+} */
 .winner-text {
-  /* margin-right: 4rem; */
   background-color: red;
 }
 button {

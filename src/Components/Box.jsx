@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "../Styles/Box.css";
 export default function Box(props) {
   let [input, setInput] = useState(" ");
-
   let condition = {
     row: [
       [0, 1, 2],
@@ -33,7 +32,7 @@ export default function Box(props) {
   };
   function register() {
     let boxes = { ...props.status };
-    if (input == " ") {
+    if (boxes[props.num] == " ") {
       if (props.player == 1) {
         setInput("X");
         boxes[props.num] = "X";
@@ -50,6 +49,8 @@ export default function Box(props) {
     console.log(boxes);
     checkResult(boxes);
   }
-
-  return <td onClick={register}>{input}</td>;
+  function donone() {
+    console.log(":asd");
+  }
+  return <td onClick={register}>{props.status[props.num]}</td>;
 }
